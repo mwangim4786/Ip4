@@ -105,3 +105,113 @@ function displayCart(){
     $("#total").html( totalCart());
    
 };
+
+
+$(function(){
+    $('#hawBtn').click(function(){
+        $(".flex-container").empty();
+        $('.flex-container').append(' <h3>Hawaiian </h3>'+
+        ' <div class="row">'+
+        '<div class="col-md-4">'+
+
+        '<div class="items border">'+
+            '<div><img src="images/hawaii.jpg" alt=""></div>'+
+            '<div class = "itemsBtn"><a class = "addToCart" href="#" nameData = "Large Hawaaian" priceData = "1500">'+
+                '<button class = "block" id="chicBtn">Large Haawaian <br> Ksh 1500</button></a></div>'+
+        '</div>'+
+
+        '</div>'+
+
+        '<div class="col-md-4">'+
+
+            '<div class="items border">'+
+                '<div><img src="images/hawaii.jpg" alt=""></div>'+
+            '<div class = "itemsBtn"><a class = "addToCart" href="#" nameData = "Medium Hawaaian" priceData = "1000">'+
+                '<button class = "block" id="hawaiBtn">Medium Haawaian <br> Ksh 1000</button></a></div>'+
+                '</div>'+
+            
+            '</div>'+
+
+            '<div class="col-md-4">'+
+
+                '<div class="items border">'+
+                    '<div><img src="images/hawaii.jpg" alt=""></div>'+
+            '<div class = "itemsBtn"><a class = "addToCart" href="#" nameData = "Small Hawaaian" priceData = "500">'+
+                '<button class = "block" id="vegBtn">Small Haawaian <br> Ksh 500 </button></a></div>'+
+                '</div>'+
+                
+                '</div>'+
+
+    '</div>'+
+
+                '<h6>Select Your Toppings </h6>'+
+                    '<div class="row tops">'+
+                    '<div class="col-lg-3">'+
+                    '<div><a class = "topsbtns addToCart" href="#" nameData = "Mushrooms" priceData = "300">'+
+                    '<button class = "block1" style = "background: url(images/top1.png); background-size: cover;" id="chicBtn">Mushrooms <br> Ksh 300</button></a></div>'+
+                    '</div>'+
+                    '<div class="col-lg-3">'+
+                    '<div><a class = "topsbtns addToCart" href="#" nameData = "Bacon" priceData = "300">'+
+                    '<button class = "block1" style = "background: url(images/top2.jpg); background-size: cover;" id="chicBtn">Bacon <br> Ksh 300</button></a></div>'+
+                    '</div>'+
+                    '<div class="col-lg-3">'+
+                    '<div><a class = "topsbtns addToCart" href="#" nameData = "Cheese" priceData = "300">'+
+                    '<button class = "block1" style = "background: url(images/top3.jpg); background-size: cover;" id="chicBtn">Cheese <br> Ksh 300</button></a></div>'+
+                    '</div>'+
+                    '</div>'+
+
+                    '<h6>Select Your Crust </h6>'+
+                '<div class="row tops">'+
+                    '<div class="col-lg-3">'+
+                    '<div><a class = "topsbtns addToCart" href="#" nameData = "Crispy" priceData = "300">'+
+                    '<button class = "block1"  id="chicBtn">Cheese <br> Ksh 300</button></a></div>'+
+                    '</div>'+
+                    '<div class="col-lg-3">'+
+                    '<div><a class = "topsbtns addToCart" href="#" nameData = "Stuffed" priceData = "300">'+
+                    '<button class = "block1" id="chicBtn">Cheese <br> Ksh 300</button></a></div>'+
+                    '</div>'+
+                    '<div class="col-lg-3">'+
+                    '<div><a class = "topsbtns addToCart" href="#" nameData = "Gluten Free" priceData = "300">'+
+                    '<button class = "block1" id="chicBtn">Cheese <br> Ksh 300</button></a></div>'+
+                    '</div>'+
+                    '</div>');
+        
+
+
+
+
+
+                    $(' .addToCart').click(function(event){
+                        event.preventDefault();
+                        var name = $(this).attr("nameData");
+                        var price = Number($(this).attr("priceData"));
+                
+                        addToCart(name, price, 1);
+                        displayCart();
+                    });
+
+
+
+                    $('#clearCart').click(function(event){
+                        clearCart()
+                        displayCart();
+                    });
+                    
+                
+                
+                    // function displayCart(){
+                    //     var cartArray = listCartItems();
+                    //     var output = "";
+                    //     for (var i in cartArray){
+                    //         output += "<li>"+cartArray[i].name+" &nbsp &nbsp &nbsp  "+cartArray[i].price+ " &nbsp &nbsp &nbsp " +cartArray[i].noOfItems+"</li>"
+                    //     };
+                    //     $("#showCart").html(output);
+                    //     $("#total").html( totalCart());
+                    // };
+
+
+
+
+
+
+    });
