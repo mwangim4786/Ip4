@@ -78,3 +78,19 @@ function totalCart(){
     };
     return totalCartCosts;
 };
+
+//************************************************ */
+
+
+function listCartItems(){
+    var cartCopy = [];
+    for(var i in cart){
+        var item  = cart[i];
+        var itemCopy = {};
+        for (var p in item){
+            itemCopy[p] = item[p];
+        };
+        cartCopy.push(itemCopy);
+    };
+    return cartCopy;
+};
