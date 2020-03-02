@@ -17,3 +17,19 @@ function addToCart(name, price, noOfItems){
     var item = new Product(name, price, noOfItems);
     cart.push(item);
 } 
+
+//********************************************** */
+
+
+
+function removeItem(name){
+    for(var i in cart){
+        if(cart[i].name === name){
+            cart[i].noOfItems --;
+            if(cart[i].noOfItems === 0){
+                cart.splice(i, 1)
+            };
+            return;
+        };
+    };
+};
