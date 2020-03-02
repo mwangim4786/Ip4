@@ -33,3 +33,23 @@ function removeItem(name){
         };
     };
 };
+
+
+/******************************************** */
+
+
+function removeItemAll(name){
+    for(var i in cart){
+        if(cart[i].name === name){
+            cart.splice(i, 1);
+            return;
+        }
+    }
+};
+
+
+
+
+function clearCart(){
+    cart = [];
+}
