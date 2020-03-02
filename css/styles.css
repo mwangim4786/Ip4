@@ -194,3 +194,15 @@ h6{
 }
 
 
+.flex-container4{
+    width: 90%;
+    height: 600px;
+    border: 1px solid;
+}
+
+.flex-container4 p{
+    padding: 100px 230px 0 0;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
