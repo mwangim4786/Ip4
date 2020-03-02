@@ -53,3 +53,28 @@ function removeItemAll(name){
 function clearCart(){
     cart = [];
 }
+
+//*************************************************** */    
+
+
+function countCart(){
+    var totalItemsCount = 0;
+    for(var i in cart){
+        totalItemsCount += cart[i].noOfItems;
+    };
+    return totalItemsCount;
+};
+
+
+
+
+//************************************************ */
+
+
+function totalCart(){
+    totalCartCosts = 0;
+    for(var i in cart){
+        totalCartCosts += cart[i].price * cart[i].noOfItems;
+    };
+    return totalCartCosts;
+};
