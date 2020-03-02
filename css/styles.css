@@ -189,7 +189,7 @@ h6{
 }
 
 .block1:hover{
-    background-image: none;
+    background: rgba(0,0,0,.7);
     color: white;
 }
 
