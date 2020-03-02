@@ -94,3 +94,14 @@ function listCartItems(){
     };
     return cartCopy;
 };
+
+function displayCart(){
+    var cartArray = listCartItems();
+    var output = "";
+    for (var i in cartArray){
+        output += "<li>"+cartArray[i].name+" &nbsp &nbsp &nbsp "+cartArray[i].price+ " &nbsp &nbsp &nbsp " +cartArray[i].noOfItems+"</li>"
+    };
+    $("#showCart").html(output);
+    $("#total").html( totalCart());
+   
+};
