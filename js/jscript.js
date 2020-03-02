@@ -530,6 +530,17 @@ $(function(){
     '<div><a class = "topsbtns addToCart" href="#" nameData = "Gluten Free" priceData = "300">'+
     '<button class = "block1" id="chicBtn">Gluten Free <br> Ksh 300</button></a></div>'+
     '</div>'+
+
+
+
+    '<div class="col-lg-3">'+
+    '<div><a class = "topsbtns addToCart" href="#" nameData = "Delivery fee" priceData = "500">'+
+    '<button class = "block1" id="chicBtn">Delivery fee<br> Ksh 500</button></a></div>'+
+    '</div>'+
+
+
+
+
     '</div>');
         
    
