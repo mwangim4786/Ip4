@@ -578,7 +578,8 @@ $(function(){
 
 
 
-
+$('#deliver').click(function(){
+    $('.flex-container1').append(
 
 
 
