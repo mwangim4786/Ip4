@@ -40,3 +40,40 @@ body{
     background: transparent;
 }
 
+#topBtn3{
+    border-right: 1px;
+}
+
+.topButtons a{
+    text-decoration: none;
+    color: black;
+}
+
+#topBtn1{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#topBtn3{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#leftColumn{
+    width: 10%;
+    margin-top: 20px;
+    box-shadow: 0 5px 25px rgba(0,0,0,.2);
+}
+
+.colBtns{
+    padding: 40px 23px;
+    width: 100%;
+    height: 100px;
+}
+
+.colBtns:hover{
+    background: #EEEEEE;
+    color: #660066;
+    font-size: 16px;
+    cursor: pointer;
+}
