@@ -27,6 +27,7 @@ body{
     padding: 5.5px 0;
 }
 
+
 .topButtons{
     float: left;
     padding: 10px 20px;
@@ -40,9 +41,9 @@ body{
     background: transparent;
 }
 
-#topBtn3{
+/* #topBtn3{
     border-right: 1px;
-}
+} */
 
 .topButtons a{
     text-decoration: none;
@@ -198,6 +199,7 @@ h6{
     width: 90%;
     height: 600px;
     border: 1px solid;
+    margin-top: 35px;
 }
 
 .flex-container4 h3{
